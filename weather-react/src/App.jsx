@@ -6,17 +6,18 @@ import { FaTemperatureHigh, FaWind } from 'react-icons/fa'
 
 function App() {
   const [weather, setWeather] = useState(null)
-  const city = "Lavras"
+  const [city, setCity] = useState("")
 
-  async function handleGetWeather(){
+  async function handleGetWeather(event){
+    event.preventDefault()
     const response = await api.get(city)
     console.log(response.data)
     setWeather(response.data)
   }
   
   useEffect(() => {
-    handleGetWeather()
-  })
+    // handleGetWeather()
+  }, [])
 
   return (
     <div className="App">
@@ -24,7 +25,9 @@ function App() {
       {/* <header>
       <button onClick = {handleGetWeather}>Enviar</button>
       </header> */}
-
+      <header>
+      
+      </header>
       
       {weather &&
         <main>
@@ -61,15 +64,22 @@ function App() {
             </ol>
            
           </section>
-          <div className="form">
-            <div>
-              <input type="text" ></input> 
-              <button>Enviar</button>
-            </div>
-          </div>
+          
         </main>
         
       }
+      <div className="form">
+            <div>
+              <form onSubmit={handleGetWeather}>
+                <input 
+                type="text" value={city}
+                onChange={(event) => setCity(event.target.value)}
+                />
+                <button>Enviar</button> 
+              </form>
+              
+            </div>
+          </div>
     </div>
   )
 }
