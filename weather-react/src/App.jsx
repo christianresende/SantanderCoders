@@ -6,7 +6,7 @@ import { FaTemperatureHigh, FaWind } from 'react-icons/fa'
 
 function App() {
   const [weather, setWeather] = useState(null)
-  const city = "Campinas"
+  const city = document.getElementById('form')
 
   async function handleGetWeather(){
     const response = await api.get(city)
@@ -61,8 +61,9 @@ function App() {
             </ol>
            
           </section>
-
+          <input type="text" className="form"></input>
         </main>
+        
       }
     </div>
   )
