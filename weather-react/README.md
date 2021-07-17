@@ -1,20 +1,20 @@
 # CASE WEB APP DE PREVISÃO DO TEMPO
 
-- [] Node.js
-- [] Como inciiar projeto React de maneira simples:
+- [x] Node.js
+- [x] Como inciiar projeto React de maneira simples:
   - Create React App (CRA):
     `npx create-react-app nome_do_app`
   - Vite:
     `npm init vite@latest`
-- [] JSX
-- [] Vantagens sobre Javascript Vanilla ("Puro")
-- [] Requisições HTTP p/ consumir dados
-- [] Estado no React
-- [] Fluxo de renderização do React
-- [] Renderização condicional
-- [] Componentização
-- [] Realizar chamada à API assim que o componente for montado (cidade padrão)
-- [] Estilização
+- [x] JSX
+- [x] Vantagens sobre Javascript Vanilla ("Puro")
+- [x] Requisições HTTP p/ consumir dados
+- [x] Estado no React
+- [x] Fluxo de renderização do React
+- [x] Renderização condicional
+- [x] Componentização
+- [x] Realizar chamada à API assim que o componente for montado (cidade padrão)
+- [x] Estilização
 
 # Como evoluir a aplicação
 

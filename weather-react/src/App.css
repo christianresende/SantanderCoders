@@ -99,3 +99,15 @@
   font-size: 18px;
   margin-right: 8px;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  }
+
+  input {
+    text-align: center;
+  }
